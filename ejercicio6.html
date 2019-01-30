@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejercicio 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .contaier{
+                display: flex; 
+                flex-flow: column wrap;
+            }
+            header{
+                background-color: #b2f1dc;
+                width: 200px; height: 100px;
+            }
+            .principal{
+                background-color: #b3b2f1;
+                width: 200px; height: 100px;
+            }
+            .otro{
+                background-color: #f1b2b2;
+                width: 200px; height: 100px;
+            }
+            aside{
+                background-color: #f1ceb2;
+                width: 200px; height: 100px;
+            }
+            footer{
+                background-color: #d4f1b2;
+                width: 200px; height: 100px;
+            }
+            .contaier > * {flex: 1 50%;}
+        </style>
+</head>
+<body>
+    <!-- div>(header>ul>li*4>a)+section.principal+section.otro+aside+footer -->
+
+    <div class="container">
+        <header>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+            </ul>
+        </header>
+            <section class="principal"></section>
+            <section class="otro"></section>
+            <aside></aside>
+        <footer></footer>
+    </div>
+</html>
