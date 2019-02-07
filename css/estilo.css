@@ -3,18 +3,24 @@
 @-ms-viewport{
     width: device-width;
 }
+html, body{
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 .container{
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 1fr 2fr 1fr ;
-    grid-template-rows: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw 20vw 20vw 20vw;
 
 }
 header{
     grid-area: header;
     width: auto;
     height: auto;
-    grid-area: 1 / 1 / 4 / 4 ;
+    grid-area: 2 / 1 / 4 / 4 ;
     align-content: center;
 }
 img{
